@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left__col">
+                <h3 class="left__title">Входной взнос</h3>
+                <div class="holdem">
+                    <img src="./img/logo_chip.png" alt="" class="holdem__img">
+                    <div class="holdem__text">
+                        <p class="">5 / 10</p>
+                        <p class="">ФЛ Холдем</p>
+                    </div>
+                </div>
+                <p class="cash">Доступные средства: 2609</p>
+                <div class="range">
+                    <input class="range__inp" type="text" placeholder="0" value="">
+                    <div class="slider">
+                        <p class="minus">-</p>
+                        <input class="slider__inp" type="range" min="0" max="1000" value="0">
+                        <p class="plus">+</p>
+                    </div>
+                </div>
+                <div class="lef__btn btn_cnt">
+                    <button>Min</button>
+                    <button>Max</button>
+                    <button>Bank</button>
+                    <button>1/2 Bank</button>
+                </div>
+                <p class="left__text text">
+                    Ваш входной взнос не может быть меньше суммы, с которой Вы покинули данный стол.
+                    Нажмите кнопку ОК, чтобы продолжить, или подождите, когда пройдет время ограничения.
+                </p>
+                <button class="purchase">Быстрая посадка и автодокупка &raquo;</button>
+            </div>
+            <div class="right__col">
+                <div class="fast">
+                    <div class="check_cnt">
+                        <input type="checkbox" checked id="quick_landing">
+                        <label for="quick_landing">Быстрая посадка</label> 
+                        <span class="prompt">i</span>
+                    </div>
+                    <div class="auto inp__additional">
+                        <label for="auto">Автоматически ставить на стол:</label>
+                        <input id="auto" type="text" placeholder="2">
+                        <span class="auto__text">ББ</span>
+                    </div>
+                </div>
+                <div class="purchase__cnt">
+                    <div class="check_cnt">
+                        <input type="checkbox" id="auto__purchase">
+                        <label for="auto__purchase">Автодокупка</label> 
+                        <span class="prompt">i</span>
+                    </div>
+                    <p class="purchase__text text">
+                        Я хочу пользоваться функцией автоматической докупки и понимаю, что она будет автоматически пополнять
+                        счет для обеспечения заданного номера стека.
+                    </p>
+                    <div class="smaller inp__additional">
+                        <label for="additional">Если у меня меньше:</label>
+                        <input id="additional" type="text" placeholder="2">
+                        <span class="additional__text">ББ</span>
+                    </div>
+                    <div class="auto_additional inp__additional">
+                        <label for="auto__inp-additional">Автоматически докупать до</label>
+                        <input id="auto__inp-additional" type="text" placeholder="2">
+                        <span class="auto_additional__text">ББ</span>
+                    </div>
+                </div>
+                <div class="check_cnt">
+                    <input type="checkbox" id="save">
+                    <label for="save">Сохранить настройки после выхода из приложения</label> 
+                    <span class="prompt">i</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bnt__bottom">
+            <button class="ok">Ok</button>
+            <button class="Cashier">Cashier</button>
+            <button class="Cancel">Cancel</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
